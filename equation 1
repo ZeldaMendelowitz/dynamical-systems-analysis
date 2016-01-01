@@ -1,0 +1,12 @@
+function dRdt = equation_1(t,xi,p)
+
+   R=xi(1,:);
+
+    
+    c=p.c;
+    k=p.k;
+    
+    dRdt= k*R*(1 - (R/c));
+    
+    
+end
