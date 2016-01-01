@@ -1,0 +1,42 @@
+%%
+clear all
+close all
+clc
+
+%% 
+
+     p.c=15;
+     p.k=2;
+
+
+[t,x]=ode45(@equation_1,[0 50],[0],[],p); %[2 0] means 2 x initial conditions and 0 y initial conditions
+plot(t,x) 
+
+
+hold on
+
+
+%% 
+
+     p.c=15;
+     p.k=2;
+
+
+[t,x]=ode45(@equation_1,[0 50],[2],[],p); %[2 0] means 2 x initial conditions and 0 y initial conditions
+plot(t,x) 
+
+hold on
+
+
+
+%% 
+
+     p.c=15;
+     p.k=2;
+
+
+[t,x]=ode45(@equation_1,[0 50],[17],[],p); %[2 0] means 2 x initial conditions and 0 y initial conditions
+plot(t,x) 
+
+
+hold off
